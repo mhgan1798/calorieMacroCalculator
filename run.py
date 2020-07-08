@@ -323,10 +323,11 @@ app = dash.Dash(
     ],
     external_stylesheets=[dbc.themes.DARKLY],
 )
-
-app.title = "Calorie and macronutrient calculator by HG"
+app.title = "Calorie and macronutrient calculator by HG"
 
 server = app.server
+
+
 #  %% Develop the UI/layout
 app.layout = html.Div(
     style={"padding": "20px 30px 30px 30px"},
@@ -520,7 +521,7 @@ def render_content(height, weight, age, gender, activity, goal):
                 html.H3(children="Here's a strategy for you..."),
                 html.H5(children="Daily nutritional requirements:"),
                 html.Div(
-                    style={"padding": "0px 0px 0px 20px"},
+                    style={"padding": "0px 30px 0px 20px"},
                     children=dash_table.DataTable(
                         id="nut-table",
                         style_cell={
@@ -557,5 +558,6 @@ def render_content(height, weight, age, gender, activity, goal):
 
 
 # %% Run the app
-#if __name__ == "__main__":
-#    app.run_server(debug=True)
+if __name__ == "__main__":
+    app.run_server(debug=False)
+
