@@ -324,6 +324,8 @@ app = dash.Dash(
     external_stylesheets=[dbc.themes.DARKLY],
 )
 
+app.title = "Calorie and macronutrient calculator by HG"
+
 server = app.server
 #  %% Develop the UI/layout
 app.layout = html.Div(
