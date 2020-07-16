@@ -1,5 +1,5 @@
 # calorieMacroCalculator
-A plotly-dash app that calculates your daily recommended calories and macronutrition based on user-specific stats, goals and activity levels.
+A plotly-dash app that calculates daily recommended calories and macronutrition based on user-specific stats, goals and activity levels.
 
 ![calorieCalculatorFinal_edit](https://user-images.githubusercontent.com/67821956/87680104-96b6fb80-c7af-11ea-848c-0739a65a0da5.gif)
 
